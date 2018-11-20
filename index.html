@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>테스트</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    이 애플리케이션은 node <script>document.write(process.version)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    Electron <script>document.write(process.versions.electron)</script>을 사용합니다.
+    <br/><br/>
+
+    <input id="BtnDBGet" type="button"  value="Get All"/>
+    <br/><br/>
+
+    <div id="dbResult"></div>
+    <br/><br/>
+    <div class="box">
+      id: <input id="setId" type="text">
+      name: <input id="setName" type="text">
+      num: <input id="setNum" type="number">
+      <input id="BtnDBEdit" type="button"  value="Edit"/>
+    </div>
+
+    <br/><br/>
+    <div class="box">
+      name: <input id="addName" type="text">
+      num: <input id="addNum" type="number">
+      <input id="BtnDBAdd" type="button"  value="Add"/>
+    </div>
+    <br/><br/>
+
+    <div class="box">
+      id: <input id="deleteId" type="text">
+      <input id="BtnDBDelete" type="button"  value="Delete"/>
+    </div>
+    <br/><br/>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./menuBar.js');
+    require('./databaseTest.js');
+  </script>
+</html>

@@ -1,0 +1,13 @@
+.box {
+    /* display: flex; */
+    padding: 5px;
+    border: double;
+}
+
+/* .box div{
+    flex: 2;
+} */
+
+/* .box .btn{
+    text-align: right;
+} */
